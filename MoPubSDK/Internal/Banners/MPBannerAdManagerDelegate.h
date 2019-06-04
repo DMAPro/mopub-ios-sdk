@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class MPAdView;
+@class MPAdTargeting;
 @protocol MPAdViewDelegate;
 
 @protocol MPBannerAdManagerDelegate <NSObject>
@@ -19,6 +20,7 @@
 - (id<MPAdViewDelegate>)bannerDelegate;
 - (CGSize)containerSize;
 - (UIViewController *)viewControllerForPresentingModalView;
+- (MPAdTargeting *)targeting;
 
 - (void)invalidateContentView;
 

@@ -26,6 +26,7 @@ typedef void(^MPBannerAdManagerDelegateHandlerErrorBlock)(NSError * error);
 @property (nonatomic, copy) NSString * userDataKeywords;
 @property (nonatomic, strong) CLLocation * location;
 @property (nonatomic, strong) UIViewController * viewControllerForPresentingModalView;
+@property (nonatomic, strong) MPAdTargeting *targeting;
 
 @property (nonatomic, copy) MPBannerAdManagerDelegateHandlerBlock didLoadAd;
 @property (nonatomic, copy) MPBannerAdManagerDelegateHandlerErrorBlock didFailToLoadAd;

@@ -201,6 +201,7 @@
 - (void)refreshTimerDidFire
 {
     if (!self.loading && self.automaticallyRefreshesContents) {
+        self.targeting = [self.delegate targeting];
         [self loadAdWithTargeting:self.targeting];
     }
 }
